@@ -1,0 +1,28 @@
+
+
+/* Reset Css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Variaveis CSS */
+
+:root {
+    --cor-dark: #212121;
+    --cor-light: #f2f2f2;
+
+}
+
+/* Global Style */
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'roboto';
+    background-color: #212121;
+    color: #f2f2f2;    
+}
+
+
