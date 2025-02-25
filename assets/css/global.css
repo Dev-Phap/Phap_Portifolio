@@ -5,24 +5,50 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 
 /* Variaveis CSS */
 
 :root {
-    --cor-dark: #212121;
-    --cor-light: #f2f2f2;
+    --cor-primary: #212121;
+    --cor-primary-alpha:#21212180;
+    --cor-secundary: #f2f2f2;
+    --cor-secundary-alpha: #f2f2f280;
+    
+    --cor-primary-linear-gradient: linear-gradient(90deg, #f2f2f2, #737373);
+    --cor-secundary-linear-gradient: linear-gradient(90deg, #212121, #737373);
 
+    --cor-primary-radial-gradient: radial-gradient(#f2f2f2,#737373);
+    --cor-secundary-radial-gradient: radial-gradient( #212121, #737373);
+
+    
 }
 
 /* Global Style */
 body {
     width: 100%;
     height: 100%;
-    font-family: 'roboto';
-    background-color: #212121;
-    color: #f2f2f2;    
+    font-family: 'roboto',sans-serif;
+    background-color:var(--cor-primary);
+    color: var(--cor-secundary);    
+    text-shadow: 1px 1px 1px var(--cor-primary-alpha);
 }
 
+a {
+    text-decoration: none;
+    color: var(--cor-secundary);
+    display: inline-block; /* transforma em inline block */
+    transition: filter 0.3s ease-in,
+                transform 0.3s ease-in; 
+}
 
+a:hover {
+    filter: brightness(1.3), drop-shadow(1px 1px 1px var(--cor-secundary-alpha));
+    transform: scale(1.1);
+}
+
+li {
+    list-style: none;
+}

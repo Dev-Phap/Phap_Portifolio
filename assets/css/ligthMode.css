@@ -1,0 +1,41 @@
+/* MUDANÇA DE THEMA GLOBAL */
+
+:root.lightTheme {
+    --cor-primary: #f2f2f2;
+    --cor-primary-alpha:#f2f2f280;
+    --cor-secundary: #212121;
+    --cor-secundary-alpha: #21212180;
+    
+    --cor-primary-linear-gradient: linear-gradient(90deg, #737373,#212121);
+    --cor-secundary-linear-gradient: linear-gradient(90deg, #f2f2f2, #737373);
+
+    --cor-primary-radial-gradient: radial-gradient(#737373,#212121);
+    --cor-secundary-radial-gradient: radial-gradient( #f2f2f2, #737373);
+}
+
+
+/* ANIMAÇÃO BOTÃO SWITCH */
+
+/* botão troca de tema */
+.btn_switch_theme.move {
+    width: 40px;
+    height: 19px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+    background-image:var(--cor-primary-radial-gradient);
+    box-shadow: 1px 1px 1px var(--cor-primary-alpha);
+    padding: 0px 3px;
+}
+
+/* circulo dentro do botão de troca de tema */
+.btn_circle.move {
+    width: 15px;
+    height: 15px;
+    background-color: var(--cor-primary);
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px var(--cor-primary-alpha);
+    
+    transform: translateX(120%);
+}
