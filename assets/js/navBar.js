@@ -8,7 +8,9 @@ const btnCircle = document.querySelector('#btnCircle');
 //Tenta pegar o valor da chave 'theme' no localStorage
 const savedTheme = localStorage.getItem("theme"); 
 
+//verifica se o valor de saveTheme é igual a "light"
 if (savedTheme === "light") {
+    //se verdadeiro, entao adiciona as classes "lightTheme" e "move" nos elementos.
     document.documentElement.classList.add("lightTheme");
     btnSwitch.classList.add("move");
     btnCircle.classList.add("move");
@@ -30,3 +32,28 @@ btnSwitch.addEventListener("click", () => {
 
 
 
+/* MENU HAMBURGUER - ANIMAÇÃO E FUNCIONAMENTO. */
+
+const menuMobile = document.querySelector('.menu_mobile');
+const menuIcon = document.querySelector('.menu_mobile_icon');
+
+
+menuIcon.addEventListener('click', () => {
+    menuMobile.classList.toggle('active');
+});
+
+
+/* EVENTO DE CLICK FORA FECHAR O MENU */
+
+const menuOverlay = document.querySelector('.menu_overlay');
+
+menuOverlay.addEventListener('click', () => {
+    menuMobile.classList.toggle('active');
+});
+
+const btnCloseMenu = document.querySelector('.btn_close_menu')
+
+btnCloseMenu.addEventListener('click', () => {
+    menuMobile.classList.toggle('active');
+
+});

@@ -6,8 +6,8 @@
     --cor-secundary: #212121;
     --cor-secundary-alpha: #21212180;
     
-    --cor-primary-linear-gradient: linear-gradient(90deg, #737373,#212121);
-    --cor-secundary-linear-gradient: linear-gradient(90deg, #f2f2f2, #737373);
+    --cor-primary-linear-gradient: linear-gradient(180deg, #737373,#212121);
+    --cor-secundary-linear-gradient: linear-gradient(180deg, #f2f2f2, #737373);
 
     --cor-primary-radial-gradient: radial-gradient(#737373,#212121);
     --cor-secundary-radial-gradient: radial-gradient( #f2f2f2, #737373);
@@ -25,7 +25,7 @@
     cursor: pointer;
     border-radius: 20px;
     background-image:var(--cor-primary-radial-gradient);
-    box-shadow: 1px 1px 1px var(--cor-primary-alpha);
+    box-shadow: var(--cor-primary-alpha) 0px 1px 3px, var(--cor-primary-alpha) 0px 1px 2px;
     padding: 0px 3px;
 }
 

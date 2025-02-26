@@ -2,7 +2,7 @@
 /* Container do Navbar */
 .nav_content {
 
-    
+
     max-height: 50px;
     max-width: 90%;
     display: flex;
@@ -28,6 +28,8 @@
     justify-content: space-between;
     cursor: pointer;
     padding: 5px;
+    
+    
   }
   
 .menu_mobile_icon span {
@@ -35,15 +37,136 @@
     width: 100%;
     height: 2px;
     background: var(--cor-secundary);
-    transition: 0.3s;
+    transition: all 0.3s ease-in;
     border-radius: 5px;
     box-shadow: 1px 1px 1px var(--cor-primary-alpha);
   }
 
-  .menu_mobile_icon:hover {
-        filter: drop-shadow(1px 1px 1px var(--cor-secundary-alpha));
-        transform: scale(1.1);
+.menu_mobile_icon:hover {
+    filter: drop-shadow(1px 1px 1px var(--cor-secundary-alpha));
+    transform: scale(1.1);
   }
+
+
+.menu_mobile_content {
+    max-width: 150px;
+    width: 50%;
+    height: 100vh; 
+    background: var(--cor-primary); 
+    box-shadow: var(--cor-secundary-alpha) 1.5px 1px 3px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    transform: translateX(-120%); 
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding:10px 20px 0px 20px;
+    align-items:center;
+    z-index: 1000;
+    
+    
+  }
+
+/* Fundo opaco para destaca o menu quando aberto */
+.menu_overlay {
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    width: 100vw;
+    height: 100vh; 
+    background: rgba(0, 0, 0, 0.5); 
+    opacity: 0; /* Inicialmente invisível */
+    pointer-events: none; /* Impede interações quando oculto */
+    transition: opacity 0.3s ease-in-out;
+    z-index: 999; 
+}  
+
+/* Botão para fechar o Menu quando aberto  */
+.btn_close_menu {
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;        
+    border: none; 
+    color:var(--cor-secundary); 
+    background-color:rgba(0, 0, 0, 0) ; 
+    text-shadow: 
+        -2px -2px 5px var(--cor-secundary-alpha),
+        2px 2px 5px var(--cor-secundary-alpha);
+    font-size:1rem;
+    filter: grayscale();
+      
+}
+
+.btn_close_menu:active {
+
+    transform:scale(-1.1);
+    
+}
+
+.menu_mobile_list { 
+
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top:30px;
+    font-size: 1rem;
+    font-weight: 100;
+    align-items: center;
+    transition: filter 0.3s ease-in;
+    
+}
+
+
+.menu_mobile_list li {
+
+    
+    
+    padding: 5px;
+    border-bottom: 1px solid transparent; 
+    border-image-source: linear-gradient(90deg, rgba(0,0,0,0) 0%, var(--cor-secundary) 50%, rgba(0,0,0,0) 100%);
+    border-image-slice: 1;
+    text-align: center;
+    transition: width 0.3s ease-in, filter 0.3s ease-in;
+}
+
+.menu_mobile_list li:hover {
+
+    filter: brightness(1.5); 
+    width:100%;
+}
+
+
+
+/* Quando o menu estiver ativo */
+.menu_mobile.active .menu_mobile_content {
+    display: block;
+  }
+
+.menu_mobile.active .menu_mobile_content {
+    transform: translateX(0%);
+ }
+
+.menu_mobile.active .menu_overlay {
+    opacity: 1; 
+    pointer-events: auto; /* para poder clicar no fundo */
+}
+
+
+
+
+
+
+/* Menu para tela maiores  */  
+.nav_menu {
+    display: none;/* vai ser flex em outros tamanho de tela mas nao focar aquia gora */
+}
+
+
 
 
 /* Centro Nav Bar */
