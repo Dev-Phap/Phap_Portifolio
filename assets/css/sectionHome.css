@@ -1,0 +1,123 @@
+ /* Main Container */
+
+ .main_container {
+
+    margin-top:58px;
+    height:10000px; /* colocado para teste dos elementos fixos apos isso tirar */
+ }
+
+ /* SectionHome container */
+
+ .sectionHome_container{
+    
+    max-width: 95%;
+    display: flex;
+    flex-direction:column; 
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    padding: 5px 5px;    
+    color: var(--cor-secundary);
+ }
+
+
+/* circle Image container */
+
+.circleImage_container {
+    width: 220px; 
+    height: 220px;
+    margin-top:70px;
+    background-image: var(--cor-primary-linear-gradient); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    box-shadow: 2px 2px 3px black;
+    
+}
+
+
+.perfil_image {
+    width: 95%;
+    height: 95%;
+    object-fit: contain;    
+    display:block;
+    border-radius:50%; 
+    z-index:0;
+}
+
+
+/* Texto Seção Home */
+
+.text_section_home {
+    width:100%;
+    margin-top:40px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.title_text_home{
+
+    width:100%;
+    font-size:1.3rem;
+    font-weight: lighter;
+    text-align:center;
+    line-height: 25px;
+}
+
+.title_text_home strong{
+    font-size:1.8rem;
+    margin-top:15px;
+    font-weight:normal;
+    display:block;
+}
+
+
+.title_subtext_home {
+    display:block;
+    margin-top:20px;
+    width:90%;
+    max-width:300px;
+    font-size:0.9rem;
+    font-weight: lighter;
+    text-align:justify;
+    line-height: 22px;
+}
+
+/* Midias sociais e curriculo */
+
+.social_container{
+
+    width:90%;
+    margin-top:20px;
+    display:flex; 
+    flex-direction:row;
+    flex-wrap: wrap;      
+    justify-content:center;
+    align-items:center; 
+    gap:20px;
+    
+}
+
+.social_container li {
+    display:flex;
+    flex-direction:row;
+    max-height:30px;  
+    cursor:pointer; 
+    }
+
+.social_container li:active {
+    transform:scale(1.1);
+}    
+
+.social_container li a img {
+
+    object-fit:cover;
+    max-width:30px;
+    max-height:30px;
+    filter: drop-shadow(2px 2px 2px var(--cor-secundary-alpha))  
+}
+

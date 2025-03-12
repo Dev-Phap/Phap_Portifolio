@@ -1,10 +1,4 @@
 
-
-
-    
-
-
-
 /* MENU HAMBURGUER - ANIMAÇÃO E FUNCIONAMENTO. */
 
 const menuMobile = document.querySelector('.menu_mobile');
