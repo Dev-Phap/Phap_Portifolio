@@ -31,7 +31,7 @@
                 <div class="menu_mobile_content">
                     <button class="btn_close_menu">  X  </button>
                     <ul class="menu_mobile_list">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#home">Home</a></li>
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#">Habilidades</a></li>
                         <li><a href="#">Portifólio</a></li>
@@ -41,12 +41,12 @@
                 </div>
             </div>
             <div class="nav_logo">
-                <a href="#">
+                <a href="#home">
                     <h1 class="phap"><b><i>PHAP</i></b></h1>
                 </a>
             </div>
             <ul class="nav_menu">
-                <li><a href="#">Home</a><div> </div></li>
+                <li><a href="#home">Home</a><div> </div></li>
                 <li><a href="#">Sobre</a><div> </div></li>
                 <li><a href="#">Habilidades</a><div> </div></li>
                 <li><a href="#">Portifólio</a><div> </div></li>
@@ -60,25 +60,31 @@
           </nav>   
     </header>
     <main class="main_container">
-        <section class="sectionHome_container">
+        <section id="home"class="sectionHome_container">
             <div class="circleImage_container">
                 <img class="perfil_image" src="assets/images/me/Eu.png" alt="Imagem Demonstrando o Desenvolvedor Paulo Henrique, homem, pele clara, olhos e cabelo castanhos, cabelo curto enrrolado"/> 
             </div>
             <div class="text_section_home">
-                <h1 class="title_text_home">Olá ! <br> Sou o Paulo Henrique, <br><strong>Front-End Developer;</strong></h1>
-                <p class="title_subtext_home"> Transformo ideias em interfaces modernas e funcionais, sempre focando em usabilidade e performance. </p>
-                <ul class="social_container"> 
+                <h1 class="title_text_home digitando" >Olá ! <br> Sou o Paulo Henrique, <br>
+                </h1>
+                <h1 class="text_frontEnd digitando" >
+                    <strong>Front-End Developer;</strong>
+                </h1>
+                <p class="title_subtext_home fadeIn"> Transformo ideias em interfaces modernas e funcionais, sempre focando em usabilidade e performance. </p>
+                <ul class="social_container fadeIn"> 
                     <li><a><img class='icon'src="assets/images/icons/gitHub_White.png" alt="Logo github"/></a></li>
                     <li><a><img class='icon' src="assets/images/icons/linkedin_White.png" alt="Logo linkedin"/></a></li>
                     <li><a><img class='icon' src="assets/images/icons/mycv_White.png" alt="Logo imagem usuario"/></a></li>
                 </ul>
             </div>            
         </section>
+        <hr class="divider"></hr>
     </main>
     <footer>
     </footer>
     <!-- scripts Js -->
     <script src="assets/js/main.js"></script>   
-    <script src="assets/js/navBar.js"></script>  
+    <script src="assets/js/navBar.js"></script>
+    <script src="assets/js/sectionHome.js"></script>    
 </body>
 </html>

@@ -5,7 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    scroll-behavior:smooth;
+    scroll-padding-top: 150px;
 }
 
 
@@ -52,4 +53,50 @@ a:hover {
 
 li {
     list-style: none;
+}
+
+hr.divider {
+ 
+        display:block;
+        margin-top:5px;   
+        height:0.75px;
+        width:80%;
+        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, var(--cor-secundary) 50%, rgba(0,0,0,0) 100%);
+        border: none; 
+      
+}
+
+/* Efeitos Globais */
+
+/* Esmaecer */
+
+/* Classe para esmaecer os elementos */
+.fadeIn {
+    
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+/* Após a digitação, a classe será adicionada e a opacidade mudará */
+.fadeIn.visible {
+    
+    opacity: 1;
+}
+
+
+
+/* Responsividade globais */
+@media (min-width:800px){
+    hr.divider{
+        width:95%
+    }
+
+}
+
+
+@media (min-width:1080px){
+    hr.divider{
+        max-width:1080px;
+    }
+
 }

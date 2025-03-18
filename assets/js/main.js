@@ -54,3 +54,18 @@ btnSwitch.addEventListener("click", () => {
 
 
 
+/* Aplicando Efeitos Globais  */
+
+
+/* Efeito esmaecer - precisa colocar  */
+function aplicarEfeitoEsmaecer() {
+    // Seleciona os elementos restantes e aplica o efeito de esmaecer
+    const outrosElementos = document.querySelectorAll('.fadeIn');
+    
+    // Aplica o efeito de esmaecer após 1 segundo da digitação finalizar
+    setTimeout(() => {
+        outrosElementos.forEach((elemento) => {
+            elemento.classList.add('visible');
+        });
+    }, 1300); // Delay antes de iniciar o esmaecimento (depois da digitação)
+}

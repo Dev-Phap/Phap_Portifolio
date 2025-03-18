@@ -1,24 +1,31 @@
  /* Main Container */
 
  .main_container {
-
-    margin-top:58px;
+    max-width: 80%;
     height:10000px; /* colocado para teste dos elementos fixos apos isso tirar */
+    display:flex;
+    flex-direction:column;
+    margin:45px auto 0px;
+    align-items:center;
+    
  }
 
  /* SectionHome container */
 
  .sectionHome_container{
     
-    max-width: 95%;
+    width:100%;
     display: flex;
     flex-direction:column; 
     justify-content: space-between;
     align-items: center;
-    margin: 10px auto;
+    margin:10px auto 70px;
     padding: 5px 5px;    
     color: var(--cor-secundary);
+    
  }
+
+
 
 
 /* circle Image container */
@@ -40,7 +47,7 @@
 .perfil_image {
     width: 95%;
     height: 95%;
-    object-fit: contain;    
+    object-fit: cover;    
     display:block;
     border-radius:50%; 
     z-index:0;
@@ -121,3 +128,98 @@
     filter: drop-shadow(2px 2px 2px var(--cor-secundary-alpha))  
 }
 
+
+
+/* Responsividade telas mairoes que 700px */
+@media (min-width: 800px ) {
+    .sectionHome_container{
+        max-width:900px;  
+        display: flex;
+        flex-direction:row-reverse;
+        justify-content:space-around;
+        align-items: center;
+        
+        margin-top:200px;
+        margin-bottom:100px;
+        padding:0% 5%;
+
+     }
+
+     .text_section_home {
+        width:500px;
+        align-items: start;
+        margin:0px;                
+    }
+
+    .title_text_home {
+        text-align: left;
+         line-height: 30px;
+    }
+
+    .title_text_home h1 {
+        
+        font-size:4rem;
+        line-height: 30px;
+    }
+
+    .text_frontEnd{
+       
+        font-size:2.5rem;
+    }
+
+    .circleImage_container {
+        min-width: 280px; 
+        min-height: 280px;
+        margin-top:0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+
+    .social_container{
+
+        width:50%;
+        max-width: 300px;
+        justify-content:start;
+        align-items:center; 
+        
+    }
+}
+
+@media (min-width:1080px){
+    .sectionHome_container{
+        padding:0% 0%;
+        margin-bottom:100px;
+     }
+
+    .text_section_home {
+        width:600px;
+                      
+    }
+
+    .title_text_home{
+        width:100%;
+        font-size:2rem;
+    }
+    
+    
+    .title_subtext_home {
+        max-width:60%;
+        width:60%;
+        font-size:1.1rem;
+    }
+
+    .circleImage_container {
+        width: 310px; 
+        height: 310px;
+        margin-top:0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+
+}
