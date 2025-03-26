@@ -1,0 +1,123 @@
+
+/* main container */
+.main_container {
+    max-width: 80%;
+    height:10000px; /* colocado para teste dos elementos fixos apos isso tirar */
+    display:flex;
+    flex-direction:column;
+    margin:45px auto 0px;
+    align-items:center;
+    
+ }
+
+
+
+ /* section container  */
+ .section_container{
+    
+    width:100%;
+    display: flex;
+    flex-direction:column; 
+    align-items: center;
+    margin:10px auto 10px;
+    padding: 5px 5px;    
+    color: var(--cor-secundary);
+    
+ }
+
+
+
+/* boxsections sãos as caixas que vão guardar as seções */ 
+ .boxSection {
+
+    
+    width:100%;
+       
+    margin:20px auto 20px;
+    
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid var(--cor-secundary);
+    border-radius: 25px;
+    
+ } 
+
+
+
+
+
+
+/* cabeçãlho da caixa de seção */
+
+
+ .header_boxSection {
+    width:100%;
+    height:50px;  
+    padding:0px 5px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;    
+ }  
+
+
+ /* Conteudo expandido */
+
+ .content {
+
+    width:100%;
+    max-height: 0px;
+    overflow:hidden;
+    opacity:0;    
+    
+    transition: max-height 0.3s ease; 
+
+}
+
+
+
+.content.active {
+    
+    max-height: 1000px;    
+    display:flex;
+    overflow:visible;
+    opacity:1;
+    padding:0px 15px;
+    margin:15px 0px;
+    text-align: justify;
+
+    transition:opacity 1.5s ease, max-height 0.5s ease;
+}
+
+
+
+
+ /* Titulo do cabeçalho da seções */
+
+ .title_section_container{
+    display: flex;
+    align-items:center;
+    gap:20px;
+}
+
+
+
+/* Icone da seção */
+.iconImage{
+    max-width:40px;
+    height: 40px;
+    margin:0px 0px 0px 10px;
+    padding: 0px 0px 0px 0px;
+    object-fit:cover;
+}
+
+
+/* icone da seta que vai abrir e fechar a seção */
+.btn_arrowImage{ 
+    max-width:20px;
+    height: 20px;
+    margin:0px 10px 0px 0px;
+    padding: 0px 0px 0px 0px;
+ }
