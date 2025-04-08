@@ -14,7 +14,7 @@
 
  /* section container  */
  .section_container{
-    
+   max-width:1080px;
     width:100%;
     display: flex;
     flex-direction:column; 
@@ -53,6 +53,7 @@
 
 
  .header_boxSection {
+    
     width:100%;
     height:50px;  
     padding:0px 5px;
@@ -66,14 +67,13 @@
  /* Conteudo expandido */
 
  .content {
-
+    
     width:100%;
     max-height: 0px;
     overflow:hidden;
     opacity:0;    
     
-    transition: max-height 0.3s ease; 
-
+    transition: max-height 0.01s ease; 
 }
 
 
@@ -111,6 +111,7 @@
     margin:0px 0px 0px 10px;
     padding: 0px 0px 0px 0px;
     object-fit:cover;
+    filter: drop-shadow(0 0 0.75rem var(--cor-primary));
 }
 
 
@@ -121,3 +122,11 @@
     margin:0px 10px 0px 0px;
     padding: 0px 0px 0px 0px;
  }
+
+
+
+
+
+
+ /* Reservado para Responsividade */
+

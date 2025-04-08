@@ -86,9 +86,9 @@ btnExpand.forEach((btn) => {
 
 
 /* Efeito esmaecer - precisa colocar  */
-function aplicarEfeitoEsmaecer() {
+function aplicarEfeitoEsmaecer(seletor) {
     // Seleciona os elementos restantes e aplica o efeito de esmaecer
-    const outrosElementos = document.querySelectorAll('.fadeIn');
+    const outrosElementos = document.querySelectorAll(seletor);
     
     // Aplica o efeito de esmaecer após 1 segundo da digitação finalizar
     setTimeout(() => {
@@ -98,3 +98,30 @@ function aplicarEfeitoEsmaecer() {
     }, 1300); // Delay antes de iniciar o esmaecimento (depois da digitação)
 }
 
+
+
+/* Observador do Scroll se o elemento esta visivel  aplicar o efeito esmaecer para ele*/
+
+const observador = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, {
+    root: null, //observa a vieport
+    rootMargin:'0px',
+    threshold: 0.1 //Dispara quando 10%do elemento estiver visivel.
+});
+
+
+
+document.querySelectorAll('[class*="fadeIn-section"]').forEach(element => {
+    const bounding = element.getBoundingClientRect();
+
+    if (bounding.top <= window.innerHeigth && bounding.bottom >= 0 ) {
+        element.classList.add('visible');
+    } else {
+        observador.observe(element);
+    }
+});

@@ -119,6 +119,9 @@
 
 
 
+
+
+
 /* Responsividade telas mairoes que 700px */
 @media (min-width: 800px ) {
     .sectionHome_container{
@@ -203,9 +206,6 @@
         margin-top:0px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        
-        
+        justify-content: center;        
     }
-
 }

@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 setTimeout(digitar, 50);
             } else {
                 // Quando o texto for totalmente digitado, aplica o efeito de esmaecer nos outros elementos
-                aplicarEfeitoEsmaecer();
+                aplicarEfeitoEsmaecer('.fadeIn-home');
             }
         } setTimeout(digitar, index * 1800 )    
     });    

@@ -77,18 +77,20 @@ hr.divider {
 
 /* Esmaecer */
 
-/* Classe para esmaecer os elementos */
-.fadeIn {
-    
+/* Aplica a TODOS que começam com "fadeIn-section" */
+[class*="fadeIn-section"], 
+.fadeIn-home {
     opacity: 0;
-    transition: opacity 2s ease-in-out;
+    transform: translateY(20px); /* Efeito adicional de deslize */
+    transition: opacity 2s ease-in-out, transform 1s ease-in-out;
 }
 
-/* Após a digitação, a classe será adicionada e a opacidade mudará */
-.fadeIn.visible {
-    
+[class*="fadeIn-section"].visible,
+.fadeIn-home.visible {
     opacity: 1;
+    transform: translateY(0);
 }
+
 
 
 
