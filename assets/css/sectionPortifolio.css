@@ -1,0 +1,116 @@
+
+
+/* Container portifolio */
+
+.content_portifolio{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin:0px;
+    padding: 15px 0px 5px 0px;
+       
+}
+
+/* Gerais do Portifolio */
+.btn_arrowImage_portifolio{
+    max-width:20px;
+    height: 20px;
+    margin:0px 10px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+/* Container Work */
+
+
+
+
+.header_work{
+     display:flex;
+     align-items:center;
+     justify-content:space-between;
+     
+}
+
+.title_header{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+
+
+
+
+/* Container Project */
+
+.container_project{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+    padding:15px 5px;
+    border: 1px solid var(--cor-secundary); 
+    border-radius:20px;
+}
+
+
+.header_project{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+     
+}
+
+
+/* Conteudos Project + Work*/
+
+.container_work,
+.container_project{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+    padding:15px 5px;
+    color:var(--cor-secundary);
+    background: var(--cor-primary); 
+    
+    border: 1px solid var(--cor-primary); 
+    border-radius:20px;
+    
+}
+
+
+.content_work,
+ .contetn_project{
+    
+    width:100%;
+    max-height: 0px;
+    overflow:hidden;
+    opacity:0;    
+    
+    transition: max-height 0.1s ease;  
+
+}
+
+
+/* Efeito ativo do conteudo */
+
+.content_project.active,
+ .content_work.active{
+    overflow:visible;
+    opacity:1;
+
+    max-height: 1000px;
+    height:60px;   
+    display:flex;
+    overflow:visible;
+    opacity:1;
+    padding:0px 10px;
+    margin:15px 0px;
+    text-align: justify;
+
+    transition:opacity 1.5s ease, max-height 0.5s ease;
+}
+
+

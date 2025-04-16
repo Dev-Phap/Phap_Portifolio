@@ -119,7 +119,7 @@ const observador = new IntersectionObserver((entries) => {
 document.querySelectorAll('[class*="fadeIn-section"]').forEach(element => {
     const bounding = element.getBoundingClientRect();
 
-    if (bounding.top <= window.innerHeigth && bounding.bottom >= 0 ) {
+    if (bounding.top <= window.innerHeight && bounding.bottom >= 0 ) {
         element.classList.add('visible');
     } else {
         observador.observe(element);
