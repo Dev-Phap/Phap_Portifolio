@@ -8,7 +8,7 @@ btnExpand2.forEach((btn) => {
 
         //o metodo closest procura o ancestro mais proximo que tenha a classe "boxSection" 
         //Apos procurar o elemento pai com closest usamos query selector que pega o primeiro filho com a classe testeConteudo
-        const conteudo = btn.closest('[class*="container_"]').querySelector('[class*="content_"]');
+        const conteudo = btn.closest('.container_work, .container_project').querySelector('.content_work, .content_project');
         conteudo.classList.toggle('active');
         
 
