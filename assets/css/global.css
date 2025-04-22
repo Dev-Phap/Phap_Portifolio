@@ -7,6 +7,9 @@
     box-sizing: border-box;
     scroll-behavior:smooth;
     scroll-padding-top: 150px;
+
+    
+    scrollbar-color: var(--cor-secundary-alpha) transparent;
 }
 
 
@@ -108,4 +111,35 @@ hr.divider {
         max-width:1080px;
     }
 
+}
+
+
+
+
+/* SCROLL Para Chrome, Edge, Opera e outros navegadores WebKit */
+::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+
+}
+  
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-secundary-alpha); 
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+  
+::-webkit-scrollbar-button {
+    display: none; /* Remove as setas */
 }
