@@ -111,7 +111,7 @@ const observador = new IntersectionObserver((entries) => {
 }, {
     root: null, //observa a vieport
     rootMargin:'0px',
-    threshold: 0.1 //Dispara quando 10%do elemento estiver visivel.
+    threshold: 0.5 //Dispara quando 10%do elemento estiver visivel.
 });
 
 

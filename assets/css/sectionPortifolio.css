@@ -111,12 +111,14 @@
     background: var(--cor-primary);
    
 }
+
 .container_Image a {
     margin:0px;
     padding:0px;
     width:100%;
 
 }
+
 .container_Image a:hover {    
     transform: scale(1.05);
 }

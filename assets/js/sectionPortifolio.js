@@ -11,7 +11,7 @@ btnExpand2.forEach((btn) => {
         const conteudo = btn.closest('.container_work, .container_project').querySelector('.content_work, .content_project');
         conteudo.classList.toggle('active');
         
-
+        
         //aqui verifica se o botão de seta tem incluso "baixo" no src da tag img, e caso verdadeiro muda de "baixo" para "cima". caso falso muda de "cima" para  "baixo"
         if (btn.src.includes('baixo')) {
             btn.src = btn.src.replace('baixo', 'cima');
