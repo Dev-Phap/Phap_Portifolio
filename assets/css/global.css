@@ -61,11 +61,11 @@ li {
     list-style: none;
 }
 
-hr.divider {
+.divider {
  
         display:block;
         margin-top:5px;   
-        height:0.75px;
+        height:1px;
         width:80%;
         background: linear-gradient(90deg, rgba(0,0,0,0) 0%, var(--cor-secundary) 50%, rgba(0,0,0,0) 100%);
         border: none; 
@@ -99,7 +99,7 @@ hr.divider {
 
 /* Responsividade globais */
 @media (min-width:800px){
-    hr.divider{
+    .divider{
         width:95%
     }
 
@@ -107,7 +107,7 @@ hr.divider {
 
 
 @media (min-width:1080px){
-    hr.divider{
+    .divider{
         max-width:1080px;
     }
 

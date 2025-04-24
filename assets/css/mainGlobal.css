@@ -128,7 +128,96 @@
 
 
 
+/* Sub Sections estilos */
 
+/* Container sub BoxSections  */
+
+.container_subBoxSection{
+   width:100%;
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   margin:0px;
+   padding: 15px 0px 5px 0px;
+      
+}
+
+/* Botão seta para abrir a subSection */
+.btn_arrowImage_subBoxSection{
+   max-width:20px;
+   height: 20px;
+   margin:0px 10px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+
+
+
+
+
+/* Conteudos da subsection*/
+
+.container_subSection {
+
+   width:100%;
+   display:flex;
+   flex-direction:column;
+   margin-bottom:20px;
+   padding:15px 5px;
+   color:var(--cor-secundary);
+   background: var(--cor-primary); 
+   
+   border: 1px solid var(--cor-primary); 
+   border-radius:20px;
+  
+
+}
+
+.header_subSection {
+   display:flex;
+   align-items:center;
+   justify-content:space-between;
+    
+}
+
+.title_header{
+   display:flex;
+   align-items:center;
+   gap:20px;
+}
+
+.content_subSection{
+   
+   width:100%;
+   max-height: 0px;
+   overflow:hidden;
+   opacity:0;    
+   
+   transition: max-height 0.1s ease;  
+
+}
+
+
+
+
+
+
+/* Efeito ativar o conteudo da subsection  */
+
+.content_subSection.active{
+   overflow:visible;
+   opacity:1;
+
+   max-height: 1000px;
+    
+   display:flex;
+   overflow:visible;
+   opacity:1;
+   padding:0px 10px;
+   margin:15px 0px;
+   text-align: justify;
+
+   transition:opacity 1.5s ease, max-height 0.5s ease;
+}
 
 
 /* Responsividade telas mairoes que 800px */

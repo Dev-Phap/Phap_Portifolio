@@ -1,79 +1,8 @@
 
+/* Conteudo da subseção de portifolio */
+/* Lista portifolio */
 
-/* Container portifolio */
-
-.content_portifolio{
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    margin:0px;
-    padding: 15px 0px 5px 0px;
-       
-}
-
-/* Gerais do Portifolio */
-.btn_arrowImage_portifolio{
-    max-width:20px;
-    height: 20px;
-    margin:0px 10px 0px 0px;
-    padding: 0px 0px 0px 0px;
-}
-
-
-
-
-
-/* Conteudos Project + Work*/
-
-.container_work,
-.container_project{
-
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    margin-bottom:20px;
-    padding:15px 5px;
-    color:var(--cor-secundary);
-    background: var(--cor-primary); 
-    
-    border: 1px solid var(--cor-primary); 
-    border-radius:20px;
-   
-
-}
-
-
-.content_work,
- .content_project{
-    
-    width:100%;
-    max-height: 0px;
-    overflow:hidden;
-    opacity:0;    
-    
-    transition: max-height 0.1s ease;  
-
-}
-
-
-
-.header_project,
-.header_work{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-     
-}
-
-.title_header{
-    display:flex;
-    align-items:center;
-    gap:20px;
-}
-
-
-.content_list{
+.content_list_portifolio{
     display:flex;
     flex-direction:row;
     white-space: nowrap;
@@ -82,7 +11,7 @@
     overflow-x:auto;
 }
 
-.content_items {
+.content_items_portifolio {
     width:200px;       
     flex: 0 0 auto; /* grow - shrink - basis */
     margin:10px 0px;
@@ -101,7 +30,7 @@
 
 /* Items */
 
-.container_Image{
+.container_Image_portifolio{
     width:100%;    
     display:flex;
     align-items:center;
@@ -112,18 +41,18 @@
    
 }
 
-.container_Image a {
+.container_Image_portifolio a {
     margin:0px;
     padding:0px;
     width:100%;
 
 }
 
-.container_Image a:hover {    
+.container_Image_portifolio a:hover {    
     transform: scale(1.05);
 }
 
-.covers_image{
+.covers_image_portifolio{
     width:100%;
     height:100%;
     
@@ -133,7 +62,7 @@
 
 
 
-.footer_item{
+.footer_item_portifolio{
     width:100%;
     display:flex;
     flex-direction:row;
@@ -147,7 +76,7 @@
     
 }
 
-.footer_item a{
+.footer_item_portifolio a{
     margin:0px;
     padding:0px;
     max-width:25px;
@@ -155,7 +84,7 @@
 
 }
 
-.iconImage2{
+.iconImage_footer_portifolio{
     max-width:25px;
     height: 25px;    
     object-fit:cover;
@@ -164,24 +93,6 @@
 
 
 
-/* Efeito ativo do conteudo */
-
-.content_project.active,
- .content_work.active{
-    overflow:visible;
-    opacity:1;
-
-    max-height: 1000px;
-     
-    display:flex;
-    overflow:visible;
-    opacity:1;
-    padding:0px 10px;
-    margin:15px 0px;
-    text-align: justify;
-
-    transition:opacity 1.5s ease, max-height 0.5s ease;
-}
 
 
 
