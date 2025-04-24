@@ -111,7 +111,7 @@ btnExpandSubSection.forEach((btn) => {
 });
 
 
-
+/* Preciso refatorar a as duas funções acima ^^^ fazem a mesma coisa porem para section e outra para subsection */
 
 
 

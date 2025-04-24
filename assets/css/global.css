@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior:smooth;
-    scroll-padding-top: 150px;
+    scroll-padding-top: 100px;
 
     
     scrollbar-color: var(--cor-secundary-alpha) transparent;
@@ -28,6 +28,10 @@
     --cor-secundary-radial-gradient: radial-gradient( #737373,#212121);
 
 }
+
+
+
+
 
 /* Global Style */
 
@@ -84,7 +88,7 @@ li {
 [class*="fadeIn-section"], 
 .fadeIn-home {
     opacity: 0;
-    transform: translateY(20px); /* Efeito adicional de deslize */
+    transform: translateY(10px); /* Efeito adicional de deslize */
     transition: opacity 2s ease-in-out, transform 1s ease-in-out;
 }
 

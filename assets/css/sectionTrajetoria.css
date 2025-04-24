@@ -2,3 +2,142 @@
 
 
 
+.container_list_trajetoria {
+
+    width:100%;    
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:start;
+    padding:5px;
+    gap:15px;
+    
+}
+
+
+.content_list_trajetoria{
+    width:100%; 
+     
+    color:var(--cor-primary);
+    background: var(--cor-primary-linear-gradient); 
+    border: 1px solid var(--cor-primary-linear-gradient); 
+    border-radius:15px; 
+    padding:10px;
+
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+   
+    transition:scale 0.2s ease;
+}
+
+
+.content_list_trajetoria:hover{
+
+    transform:scale(1.008);
+    filter:brightness(1.1);
+
+}
+
+
+/* Conteudo dos items da lista */
+
+
+/* cabeçalho do card do trajeto  */
+.container_header_trajetoria{
+    display:flex;
+    flex-direction:row;
+    align-items:start;
+    justify-content:space-between;
+    gap:10px;
+
+}
+
+
+.container_image_perfil{
+    max-width:50px;
+    max-height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:start;
+   
+    border: 1px solid var(--cor-primary-linear-gradient);
+    border-radius:25%;
+    overflow:hidden;
+}
+
+.image_perfil_trajetoria{
+
+    width: 100%;
+    height: 100%;
+    
+    object-fit:cover;
+    
+}
+
+.container_headerText_trajetoria{
+    width:100%;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:start;
+    
+}
+
+.container_headerText_trajetoria h3 {
+    text-align:left;
+    font-size:0.9rem;
+
+}
+
+.container_headerText_trajetoria h4{
+    margin:2px 0px;
+    text-align:left;
+    font-size:0.85rem;
+    font-weight: normal;
+}
+
+
+
+/* Descrição do card de trajetoria  */
+
+.container_description_trajetoria {
+    width:100%;
+    display:flex; /* COLOCAR NONE APOS TERMINA DE ESTILIZAR E DPS ATIVAR PELO BOTAO VER MAIS  */
+    flex-direction:column;
+    margin:10px 0px;
+}
+
+.content_headerDecription_trajetoria{
+
+    
+
+}
+
+
+/* botao no rodape do card "ver mais e ver menos"  */
+
+.btn_verMais {
+    margin:10px 0px;
+    padding:0px 10px;
+    background:none;
+    border:none;
+    color:var(--cor-primary);
+    transition: transform 0.1s ease;
+    
+}
+
+.btn_verMais:hover {
+    transform:scale(1.02);
+    font-weight:bold;
+    
+}
+
+.btn_verMais:active {
+    transform:translateY(1px);
+    font-weight:bold;    
+}
+
+
+
