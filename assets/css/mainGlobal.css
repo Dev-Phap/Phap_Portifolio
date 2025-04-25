@@ -82,7 +82,7 @@
 
 .content.active {
     
-    max-height: 1000px;    
+    max-height: 10000px;    
     display:flex;
     overflow:visible;
     opacity:1;
@@ -124,6 +124,7 @@
     height: 20px;
     margin:0px 10px 0px 0px;
     padding: 0px 0px 0px 0px;
+    cursor:pointer;
  }
 
 
@@ -148,6 +149,7 @@
    height: 20px;
    margin:0px 10px 0px 0px;
    padding: 0px 0px 0px 0px;
+   cursor:pointer;
 }
 
 
@@ -207,7 +209,7 @@
    overflow:visible;
    opacity:1;
 
-   max-height: 1000px;
+   max-height: 10000px;
     
    display:flex;
    overflow:visible;

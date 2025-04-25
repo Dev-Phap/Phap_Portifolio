@@ -26,6 +26,8 @@
 
     display:flex;
     flex-direction:column;
+    align-items:center;
+    justify-content:center;
     gap:2px;
    
     transition:scale 0.2s ease;
@@ -50,7 +52,7 @@
     align-items:start;
     justify-content:space-between;
     gap:10px;
-
+    align-self:start;
 }
 
 
@@ -103,41 +105,110 @@
 /* Descrição do card de trajetoria  */
 
 .container_description_trajetoria {
+    display: flex;               
+    flex-direction: column;
+    overflow: hidden;            
+    max-height: 0;               
+    opacity: 0;                  
+    margin: 10px 0;
+    gap:10px;
+    text-shadow:none;
+    transform:translateY(1px);
+    transition:
+      max-height 0.2s ease,     
+      opacity     0.2s ease,
+      transform 0.2s ease;
+}
+
+
+.container_description_trajetoria.active {
     width:100%;
-    display:flex; /* COLOCAR NONE APOS TERMINA DE ESTILIZAR E DPS ATIVAR PELO BOTAO VER MAIS  */
-    flex-direction:column;
-    margin:10px 0px;
+    max-height:100000px;
+    transform:translateY(5px);
+    opacity:1;
+
+    transition:
+    max-height 0.6s ease,     
+    opacity     0.6s ease,
+    transform 0.6s ease;
+
 }
 
-.content_headerDecription_trajetoria{
+.content_calendar_trajetoria {
 
+    width:100%;
+    display:flex;
+    flex-direction: row; 
+    gap:5px;
+
+    align-items:center;
+    justify-items:center;
+   
+
+}
+
+
+.image_calendar{
+
+    max-width:18px;
+    object-fit:cover;
+
+}
+
+.calendar_text{
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+
+
+    font-size:0.6rem;
+    font-weight:800;
     
-
 }
 
+
+.content_text_trajetoria{
+
+    font-size:0.6rem;
+    font-weight:600;
+    
+}
 
 /* botao no rodape do card "ver mais e ver menos"  */
 
-.btn_verMais {
+.btn_seeMore {
+    max-width: 100px;
     margin:10px 0px;
     padding:0px 10px;
-    background:none;
+    background:var(--cor-primary);
     border:none;
+    border-radius:20px;
     color:var(--cor-primary);
     transition: transform 0.1s ease;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    cursor: pointer;
     
 }
 
-.btn_verMais:hover {
+.btn_seeMore:hover {
     transform:scale(1.02);
     font-weight:bold;
-    
-}
+    }
 
-.btn_verMais:active {
+.btn_seeMore:active {
     transform:translateY(1px);
     font-weight:bold;    
 }
 
+
+.btn_arrowImage_seeMore {
+    max-width:15px;
+    
+    
+}
 
 

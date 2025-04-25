@@ -35,13 +35,11 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-50%); /* Ajuste conforme o conteúdo duplicado */
+      transform: translateX(-50%); 
     }
   }
 
-.slider-track:hover{
-  animation-play-state: paused;
-}
+
 
 .images-list {
     display: flex;         
