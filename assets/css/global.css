@@ -51,15 +51,12 @@ body {
 a {
     text-decoration: none;
     color: var(--cor-secundary);
-    display: inline-block; /* transforma em inline block */
+    display: inline-block; 
     transition: filter 0.3s ease-in,
                 transform 0.3s ease-in; 
 }
 
-a:hover {
-    filter: brightness(1.1) drop-shadow(1px 1px 1px var(--cor-secundary-alpha));
-    transform: scale(1.15);
-}
+
 
 li {
     list-style: none;
@@ -107,6 +104,10 @@ li {
         width:95%
     }
 
+    a:hover {
+        filter: brightness(1.1) drop-shadow(1px 1px 1px var(--cor-secundary-alpha));
+        transform: scale(1.15);
+    }
 }
 
 
@@ -115,6 +116,10 @@ li {
         max-width:1080px;
     }
 
+    a:hover {
+        filter: brightness(1.1) drop-shadow(1px 1px 1px var(--cor-secundary-alpha));
+        transform: scale(1.15);
+    }
 }
 
 
