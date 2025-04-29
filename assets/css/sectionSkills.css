@@ -26,6 +26,7 @@
   display: flex;
   width: max-content;
 
+   
   animation: slideInfinite 30s linear infinite;
 }
 
@@ -46,7 +47,8 @@
     overflow-x: hidden;
     position: relative;
     align-items:center;
-    justify-content:start;       
+    justify-content:start;   
+    margin-top:2px    
   }
 
 
