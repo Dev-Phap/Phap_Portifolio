@@ -60,7 +60,7 @@
 .menu_mobile_content {
     max-width: 240px;
     width: 50%;
-    height: 100vh; 
+    height: 100dvh; 
     background: var(--cor-primary); 
     box-shadow: var(--cor-secundary-alpha) 1.5px 1px 3px;
     position: fixed; 
@@ -199,6 +199,7 @@
     font-weight: 400;
 }
 
+
 .menu_mobile_list li a:hover {
 
     filter: brightness(1.2);
@@ -334,3 +335,14 @@
    
     
 }
+
+
+@media (max-height: 700px) {
+    .menu_mobile_content {
+      overflow-y: auto;
+      padding-bottom: 5rem; /* dá um espaço extra para não cortar o último item */
+    }
+  }
+
+
+  
