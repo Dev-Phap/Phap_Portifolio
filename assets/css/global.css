@@ -152,3 +152,21 @@ li {
 ::-webkit-scrollbar-button {
     display: none; /* Remove as setas */
 }
+
+
+/* validação visuais  globais  */
+
+input:focus,
+textarea:focus{
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: red;
+  }
+
+
+input:valid {
+  border-color: green;
+}

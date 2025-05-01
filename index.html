@@ -18,9 +18,10 @@
     <link rel="stylesheet" href="assets/css/sectionHome.css">
     <link rel="stylesheet" href="assets/css/sectionSkills.css">
     <link rel="stylesheet" href="assets/css/sectionPortifolio.css">
-    <link rel="stylesheet" href="assets/css/sectionTrajetoria.css">  
+    <link rel="stylesheet" href="assets/css/sectionTrajetoria.css">
+    <link rel="stylesheet" href="assets/css/sectionContacts.css">
     
-    <title> { Dev.Phap }</title>
+    <title> { Dev.Phap } </title>
 </head>
 <body>
     <header class="header">
@@ -69,7 +70,7 @@
                 <li><a href="#skills">Habilidades</a><div> </div></li>
                 <li><a href="#portifolio">Portifólio</a><div> </div></li>
                 <li><a href="#trajetoria">Trajetória</a><div> </div></li>
-                <li><a href="#">Contato</a><div> </div></li>
+                <li><a href="#contacts">Contato</a><div> </div></li>
             </ul>
             <div id="btnSwitch" class="btn_switch_theme">
                 <div id="btnCircle"class="btn_circle"></div>
@@ -118,7 +119,7 @@
                 </div> 
             </div>
         </section>
-        <hr class="divider fadeIn-section1 ">              
+        <hr class="divider fadeIn-section ">              
         <section id="skills" class="section_container fadeIn-section2">
             <div class="boxSection">
                 <div class="header_boxSection">
@@ -206,8 +207,8 @@
                 </div> 
             </div>
         </section>        
-        <hr class="divider fadeIn-section1" >        
-        <section id="portifolio" class="section_container fadeIn-section2">
+        <hr class="divider fadeIn-section" >        
+        <section id="portifolio" class="section_container fadeIn-section3">
             <div class="boxSection active ">
                 <div class="header_boxSection">
                     <div class="title_section_container">
@@ -290,8 +291,8 @@
                 </div> 
             </div>
         </section>
-        <hr class="divider fadeIn-section1"> 
-        <section id="trajetoria" class="section_container fadeIn-section1">
+        <hr class="divider fadeIn-section"> 
+        <section id="trajetoria" class="section_container fadeIn-section4">
             <div class="boxSection  ">
                 <div class="header_boxSection">
                     <div class="title_section_container">
@@ -596,7 +597,57 @@
                 </div> 
             </div>
         </section>
-        <hr class="divider fadeIn-section1">       
+        <hr class="divider fadeIn-section">
+        <section id-="contacts" class=" section_container fadeIn-section">
+            <div class="container_contacts">
+               <div class="container_boxContacts">
+                    <h2> ❖ Contatos ❖ </h2>
+                    <ul class="boxContacts_list">
+                        <li class="boxContacts_list_items">
+                            <a  class="btn_contacts github" href="#" target="_blank">
+                                <img src="assets/images/icons/gitHub_White.png">
+                                <p>GITHUB</p>
+                            </a>
+                        </li>
+                        <li class="boxContacts_list_items">
+                            <a  class="btn_contacts linkedin" href="#" target="_blank">
+                                <img src="assets/images/icons/linkedin_White.png" alt="logo do linkedin">
+                                <p>LINKEDIN</p>
+                            </a>
+                        </li>
+                        <li class="boxContacts_list_items">
+                            <a  class="btn_contacts whatsapp" href="#" target="_blank">
+                                <img src="assets/images/icons/whatsapp_White.png" alt="logo do whatsapp">
+                                <p>WHATSAPP</p>
+                            </a>
+                        </li>
+                    </ul>    
+               </div>
+               <hr class="divider fadeIn-subSection">
+               <div class="container_boxTalkToMe">
+                    <div class="header_boxTalToMe">
+                        <h2> Me chama ai </h2>
+                        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Boy%20Light%20Skin%20Tone.png" >
+                    </div>
+                    <form  id="talkToMe" title="formTalkToMe" method="POST" class="form_talkToMe" > 
+                        <label for="name" class="title_camp_form">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required class="camp_form">
+                      
+                        <label for="email" class="title_camp_form">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Seu e-mail" required class="camp_form">
+                        
+                        <label for="title" class="title_camp_form">Assunto</label>
+                        <input type="text" id="title" name="title" placeholder="Assunto da mensagem" required class="camp_form">
+                        
+                        <label for="message" class="title_camp_form">Mensagem</label>
+                        <textarea id="message" name="message" placeholder="Sua mensagem" rows="5" required class="camp_form"></textarea>
+                        
+
+                        <button type="submit" class="btn_send">Enviar</button>
+                    </form>
+               </div>
+            </div>
+        </section>       
     </main>
     <footer>
     </footer>
@@ -605,6 +656,10 @@
     <script src="assets/js/navBar.js"></script>
     <script src="assets/js/sectionHome.js"></script>
     <script src="assets/js/sectionSkills.js"></script>    
-    <script src="assets/js/sectionTrajetoria.js"></script>     
+    <script src="assets/js/sectionTrajetoria.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.emailjs.com/dist/email.min.js">
+    </script>
+    <script src="assets/js/sectionContacts.js"></script>   
 </body>
 </html>

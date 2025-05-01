@@ -340,9 +340,8 @@
 @media (max-height: 700px) {
     .menu_mobile_content {
       overflow-y: auto;
-      padding-bottom: 5rem; /* dá um espaço extra para não cortar o último item */
+      padding-bottom: 2rem; 
     }
   }
 
 
-  

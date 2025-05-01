@@ -2,12 +2,12 @@
 /* main container */
 .main_container {
     max-width: 80%;
-    height:10000px; /* colocado para teste dos elementos fixos apos isso tirar */
+    
     display:flex;
     flex-direction:column;
     margin:45px auto 0px;
     align-items:center;
-    
+    margin:70px auto;
  }
 
 
@@ -184,7 +184,7 @@
 .title_header{
    display:flex;
    align-items:center;
-   gap:20px;
+   gap:10px;
 }
 
 .content_subSection{

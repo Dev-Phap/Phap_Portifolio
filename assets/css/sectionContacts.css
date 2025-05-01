@@ -1,0 +1,214 @@
+.container_contacts {
+
+    width:100%;
+    
+    margin:0px auto 0px;
+    color:var(--cor-primary);
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+   
+ 
+
+}
+
+
+
+/* subseção contacts */
+.container_boxContacts{
+
+    width:100%;
+    display:flex;
+    flex-direction:column; 
+    align-items:center;
+    justify-content:center;
+    padding:15px;
+    
+}
+
+.container_boxContacts h2 {
+    color:var(--cor-secundary);
+    margin-bottom:10px;
+}
+
+
+.boxContacts_list{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap; 
+    align-items:center;
+    justify-content:center;
+    gap: 10px;
+    margin:10px 0;
+}
+
+
+
+.boxContacts_list_items{
+
+    display:flex;
+    flex-direction:column; /* vou mudar para telas maiores */
+    align-items:center;
+    justify-content:center;
+    gap: 20px;
+}
+
+
+.btn_contacts {
+
+   
+   width:150px;
+   max-width:200px;
+   padding:10px;
+   border-radius:25px;
+   border:none;
+   background:none;
+   gap:10px;
+   display:flex;
+   justify-content: center ;
+   align-items:center;
+
+   cursor:pointer;
+   transition:transform 1s ease ;
+
+}
+
+
+
+.btn_contacts:hover, .btn_send:hover{
+    transform:scale(1.05);
+    filter:brightness(1.1);
+    border:solid 1px var(--cor-secundary);
+}
+
+.btn_contacts:active, .btn_send:active{
+    transform:translateY(2px);
+   
+}
+
+.btn_contacts img {
+    max-width:20px;
+}
+
+.linkedin {
+
+    background-color: #0e76a8 ;
+    color:#f2f2f2;
+    font-size:1rem;
+    font-weight:600;
+    
+}
+
+.whatsapp {
+
+    background-color: #008000;
+    color:#f2f2f2;
+    font-size:1rem;
+    font-weight:600;
+    
+}
+
+.github {
+
+    background-color: #474747 ;
+    color:#f2f2f2;
+    font-size:1rem;
+    font-weight:600;
+}
+
+
+/* subseção talk to me */
+
+.container_boxTalkToMe {
+
+    width:100%;
+    display:flex;
+    flex-direction:column; 
+    align-items:center;
+    justify-content:center;
+    padding:15px;
+}
+
+.header_boxTalToMe{
+   display:flex;
+   justify-content: center ;
+   align-items:center;
+   gap:10px;
+   margin:10px 0;
+}
+
+.header_boxTalToMe h2 {
+    color:var(--cor-secundary);
+}
+
+.header_boxTalToMe img {
+    max-width:50px;
+}
+
+
+
+.form_talkToMe{
+  width:90%;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  
+  
+  background-image: var(--cor-primary-linear-gradient); 
+  box-shadow: 2px 2px 3px black;
+  
+  border-radius: 25px;
+  padding:20px;
+  gap: 10px;
+  color:var(--cor-primary);
+}
+
+.title_camp_form {
+    
+    border-radius:10px;
+    text-align:start;
+    
+}
+
+.camp_form {
+    min-height:25px;
+    border: 1px solid var(--cor-primary); 
+    border-radius:10px;
+    padding:2px 10px;
+    color:var(--cor-secundary);
+    background-color: var(--cor-primary);
+}
+
+.camp_form::placeholder{
+    color: var(--cor-secundary)
+}
+
+.btn_send{
+    max-width:200px;
+    border: 1px solid var(--cor-primary); 
+    border-radius:15px;
+    padding:5px 15px;
+    margin:10px 0;
+    align-self:center;
+    color:var(--cor-secundary);
+    background-color: var(--cor-primary);
+}
+
+
+
+
+/* Responsividade */
+
+
+@media (min-width:800px){
+   
+
+}
+
+@media (min-width:1080px){
+    
+
+}
