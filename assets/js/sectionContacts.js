@@ -3,8 +3,10 @@
 emailjs.init("F25S4rdKnSVkJYtzt");
 
 
-
+/* pegar o formulario */
 const form = document.getElementById("talkToMe");
+
+
 
 form.addEventListener("submit", function (email) {
   email.preventDefault();

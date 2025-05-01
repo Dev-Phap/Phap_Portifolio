@@ -160,3 +160,6 @@ document.querySelectorAll('[class*="fadeIn-section"]').forEach(element => {
         observador.observe(element);
     }
 });
+
+
+/* Script para fazer manutenção nos links */
