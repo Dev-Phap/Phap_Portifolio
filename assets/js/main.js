@@ -162,4 +162,51 @@ document.querySelectorAll('[class*="fadeIn-section"]').forEach(element => {
 });
 
 
-/* Script para fazer manutenção nos links */
+/* Script para fazer manutenção nos links 
+
+class="hrefCVDowload"
+class="hrefLinkedin"
+class="hrefGithub"
+class="hrefWhatsapp"
+
+
+*/
+
+
+
+/* objeto com os links */
+const link_linkedin = `https://www.linkedin.com/in/pauloalmeidapinto/`;
+const link_GitHub = `https://github.com/Dev-Phap`;
+const link_CVDowload = `assets/documents/CV_PHAP_att_19.02.25.pdf`;
+const link_WhatsApp = `https://wa.me/5511983994412`; 
+
+/* constantes para pegar o elemento pelo seletor */
+const hrefLinkedin = document.querySelectorAll(`.hrefLinkedin`);
+const hrefGithub = document.querySelectorAll(`.hrefGithub`);
+const hrefCVDownload = document.querySelectorAll(`.hrefCVDowload`);
+const hrefWhatsApp = document.querySelectorAll(`.hrefWhatsapp`);
+
+hrefLinkedin.forEach((btn) => {
+
+    btn.href = link_linkedin ;
+
+});
+
+hrefGithub.forEach((btn) => {
+
+    btn.href = link_GitHub ;
+
+});
+
+hrefCVDownload.forEach((btn) => {
+
+    btn.href = link_CVDowload ;
+
+});
+
+hrefWhatsApp.forEach((btn) => {
+
+    btn.href = link_WhatsApp ;
+
+});
+

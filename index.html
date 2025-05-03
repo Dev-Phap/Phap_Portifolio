@@ -46,13 +46,25 @@
                         <li><a href="#skills">Habilidades</a></li>
                         <li><a href="#portifolio">Portifólio</a></li>
                         <li><a href="#trajetoria">Trajetória</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#contacts">Contato</a></li>
                     </ul>
                     <footer class="footer_menu_mobile">
                         <ul class="social_container"> 
-                            <li><a href="#" target="_blank"><img class='icon'src="assets/images/icons/gitHub_White.png" alt="Logo github"/></a></li>
-                            <li><a href="#" target="_blank"><img class='icon' src="assets/images/icons/linkedin_White.png" alt="Logo linkedin"/></a></li>
-                            <li><a href="#" target="_blank"><img class='icon' src="assets/images/icons/mycv_White.png" alt="Logo imagem usuario"/></a></li>
+                            <li>
+                                <a class="hrefGithub" href="#" target="_blank">
+                                    <img class='icon'src="assets/images/icons/gitHub_White.png" alt="Logo github"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="hrefLinkedin" href="#" target="_blank">
+                                    <img class='icon' src="assets/images/icons/linkedin_White.png" alt="Logo linkedin"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" dowload class="hrefCVDowload">
+                                    <img class='icon' src="assets/images/icons/mycv_White.png" title="Curriculo" alt="Logo imagem usuario"/>
+                                </a>
+                            </li>
                         </ul>
                     </footer>                    
                 </div>
@@ -63,9 +75,7 @@
                 </a>
             </div>
             <ul class="nav_menu">
-                <li><a href="#home">Home</a><div> </div>
-                    
-                </li>
+                <li><a href="#home">Home</a><div> </div></li>
                 <li><a href="#about">Sobre</a><div> </div></li>
                 <li><a href="#skills">Habilidades</a><div> </div></li>
                 <li><a href="#portifolio">Portifólio</a><div> </div></li>
@@ -91,9 +101,21 @@
                 </h1>
                 <p class="title_subtext_home fadeIn-home"> Transformo ideias em interfaces modernas e funcionais, sempre focando em usabilidade e performance. </p>
                 <ul class="social_container fadeIn-home"> 
-                    <li><a href="#" target="_blank"><img class='icon'src="assets/images/icons/gitHub_White.png" alt="Logo github"/></a></li>
-                    <li><a href="#" target="_blank"><img class='icon' src="assets/images/icons/linkedin_White.png" alt="Logo linkedin"/></a></li>
-                    <li><a href="#" target="_blank"><img class='icon' src="assets/images/icons/mycv_White.png" alt="Logo imagem usuario"/></a></li>
+                    <li>
+                        <a  href="#" target="_blank" class="hrefGithub">
+                            <img class='icon'src="assets/images/icons/gitHub_White.png" alt="Logo github"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hrefLinkedin" href="#" target="_blank">
+                            <img class='icon' src="assets/images/icons/linkedin_White.png" alt="Logo linkedin"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" dowload class="hrefCVDowload">
+                            <img class='icon' src="assets/images/icons/mycv_White.png" title="Curriculo" alt="Logo imagem usuario"/>
+                        </a>
+                    </li>
                 </ul>
             </div>            
         </section>        
@@ -598,25 +620,25 @@
             </div>
         </section>
         <hr class="divider fadeIn-section">
-        <section id-="contacts" class=" section_container fadeIn-section">
+        <section id="contacts" class=" section_container fadeIn-section">
             <div class="container_contacts">
                <div class="container_boxContacts">
                     <h2> ❖ Contatos ❖ </h2>
                     <ul class="boxContacts_list">
                         <li class="boxContacts_list_items">
-                            <a  class="btn_contacts github" href="#" target="_blank">
+                            <a   class="btn_contacts hrefGithub github" href="#" target="_blank">
                                 <img src="assets/images/icons/gitHub_White.png" alt="logo do github">
                                 <p>GITHUB</p>
                             </a>
                         </li>
                         <li class="boxContacts_list_items">
-                            <a  class="btn_contacts linkedin" href="#" target="_blank">
+                            <a  class="btn_contacts hrefLinkedin linkedin" href="#" target="_blank">
                                 <img src="assets/images/icons/linkedin_White.png" alt="logo do linkedin">
                                 <p>LINKEDIN</p>
                             </a>
                         </li>
                         <li class="boxContacts_list_items">
-                            <a  class="btn_contacts whatsapp" href="#" target="_blank">
+                            <a  class="btn_contacts hrefWhatsapp whatsapp" href="#" target="_blank">
                                 <img src="assets/images/icons/whatsapp_White.png" alt="logo do whatsapp">
                                 <p>WHATSAPP</p>
                             </a>
@@ -658,7 +680,7 @@
     <script src="assets/js/sectionSkills.js"></script>    
     <script src="assets/js/sectionTrajetoria.js"></script>
     <script type="text/javascript"
-            src="https://cdn.emailjs.com/dist/email.min.js">
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
     <script src="assets/js/sectionContacts.js"></script>   
 </body>
