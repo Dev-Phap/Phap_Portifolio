@@ -162,6 +162,10 @@ document.querySelectorAll('[class*="fadeIn-section"]').forEach(element => {
 });
 
 
+
+
+
+
 /* Script para fazer manutenção nos links 
 
 class="hrefCVDowload"
@@ -175,38 +179,20 @@ class="hrefWhatsapp"
 
 
 /* objeto com os links */
-const link_linkedin = `https://www.linkedin.com/in/pauloalmeidapinto/`;
-const link_GitHub = `https://github.com/Dev-Phap`;
-const link_CVDowload = `assets/documents/CV_PHAP_att_19.02.25.pdf`;
-const link_WhatsApp = `https://wa.me/5511983994412`; 
+const links = {
+    hrefLinkedin: `https://www.linkedin.com/in/pauloalmeidapinto/`,
+    hrefGithub: `https://github.com/Dev-Phap`,
+    hrefCVDowload: `assets/documents/CV_PHAP_att_19.02.25.pdf`,
+    hrefWhatsapp: `https://wa.me/5511983994412`, 
+}
+ 
 
-/* constantes para pegar o elemento pelo seletor */
-const hrefLinkedin = document.querySelectorAll(`.hrefLinkedin`);
-const hrefGithub = document.querySelectorAll(`.hrefGithub`);
-const hrefCVDownload = document.querySelectorAll(`.hrefCVDowload`);
-const hrefWhatsApp = document.querySelectorAll(`.hrefWhatsapp`);
+/* função para alimentar o href dos elementos com o link dele.  */
 
-hrefLinkedin.forEach((btn) => {
+Object.entries(links).forEach(([className, url]) => {
+    document.querySelectorAll(`.${className}`).forEach((elemento) => {
+        elemento.href = url;
+    })
+})
 
-    btn.href = link_linkedin ;
-
-});
-
-hrefGithub.forEach((btn) => {
-
-    btn.href = link_GitHub ;
-
-});
-
-hrefCVDownload.forEach((btn) => {
-
-    btn.href = link_CVDowload ;
-
-});
-
-hrefWhatsApp.forEach((btn) => {
-
-    btn.href = link_WhatsApp ;
-
-});
 
