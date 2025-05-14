@@ -1,0 +1,16 @@
+
+
+.container_footer{
+    margin:50px 0px 10px 0px;
+    padding:20px 0px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    justify-content:center;
+    align-items:center;
+    border-top: 0.1px solid gray;
+}
+
+.container_footer p {
+    font-size: 0.8rem;
+} 
