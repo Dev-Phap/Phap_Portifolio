@@ -193,6 +193,6 @@ Object.entries(links).forEach(([className, url]) => {
     document.querySelectorAll(`.${className}`).forEach((elemento) => {
         elemento.href = url;
     })
-})
+});
 
 

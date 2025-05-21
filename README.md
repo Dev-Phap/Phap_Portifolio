@@ -1,6 +1,6 @@
 <img src="assets/images/Pokemonscapa.jpg">
 
-<h1 align="center">Site Pokédex</h1>
+<h1 align="center">PHAP Portifolio</h1>
 <h4 align="center">Criar a versão 2.0 da Pokédex Dinâmica</h4>
 
 <p align="center">
