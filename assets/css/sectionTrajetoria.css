@@ -66,12 +66,13 @@
     border: 1px solid var(--cor-primary-linear-gradient);
     border-radius:25%;
     overflow:hidden;
+
 }
 
 .image_perfil_trajetoria{
-
-    width: 100%;
-    height: 100%;
+    
+    max-width: 100%;
+    max-height: 100%;
     
     object-fit:cover;
     
@@ -172,6 +173,12 @@
 
     font-size:0.6rem;
     font-weight:600;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
     
 }
 
@@ -211,6 +218,45 @@
     
     
 }
+
+
+/* botão de certificados */
+.btn-certificate{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:5px;
+
+    width:50%;
+    padding:5px 15px;
+
+    background-color:var(--cor-primary);
+    border:none;
+    border-radius:20px; 
+
+    transition: all 0.8s ease;
+}
+
+.btn-certificate:hover{
+    filter: brightness(1.1), drop-shadow(1px 1px 1px var(--cor-secundary-alpha));
+    transform:scale(1.08);
+    border:1px solid var(--cor-secundary);
+}
+
+
+.btn-certificate img{
+    max-width:20px;
+}
+
+
+.btn-certificate p{
+    width:80px;
+    text-align: center;
+}
+
+
+
+
 
 
 /* Responsividade globais */

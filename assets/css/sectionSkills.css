@@ -3,7 +3,7 @@
 .content_container {
     position: relative;
     overflow: hidden;
-    max-width: 95%; 
+    max-width: 100%; 
 
     mask: linear-gradient(
       to right,
