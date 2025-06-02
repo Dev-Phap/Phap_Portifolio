@@ -211,9 +211,9 @@ Você pode acessar ao resultado final da Versão <a href="https://dev-phap.githu
 
 <h2 id="author">💻 Paulo Henrique</h2>
 <p>
-    <img align=left margin=10 width=80 src="https://avatars.githubusercontent.com/u/32471505?v=4" border-readius=10 />
-    <p>&nbsp&nbsp&nbs Paulo Henrique de Almeida Pinto<br>
-    &nbsp&nbsp&nbsp<a href="https://github.com/Dev-Phap">GitHub</a>&nbsp;|&nbsp;<a href="https://www.linkedin.com/in/pauloalmeidapinto/">LinkedIn</a>&nbsp;|&nbsp;<a href="https://dev-phap.github.io/myCV/">My Curriculum</a>&nbsp;|&nbsp;<a href="https://wa.me/5511983994412">WhatsApp</a>
+    <img align=left margin=10 width=80 src="https://avatars.githubusercontent.com/u/32471505?v=4" border-readius=50 />
+    <p>Paulo Henrique de Almeida Pinto<br>
+    <a href="https://github.com/Dev-Phap">GitHub</a>&nbsp;|&nbsp;<a href="https://www.linkedin.com/in/pauloalmeidapinto/">LinkedIn</a>&nbsp;|&nbsp;<a href="https://dev-phap.github.io/myCV/">My Curriculum</a>&nbsp;|&nbsp;<a href="https://wa.me/5511983994412">WhatsApp</a>
     </p>
 <br/><br/>
 </p>
