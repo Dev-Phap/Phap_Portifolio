@@ -153,7 +153,7 @@ class="hrefWhatsapp"
 const links = {
     hrefLinkedin: `https://www.linkedin.com/in/pauloalmeidapinto/`,
     hrefGithub: `https://github.com/Dev-Phap`,
-    hrefCVDowload: `assets/documents/CV_PHAP_att_19.02.25.pdf`,
+    hrefCVDowload: `assets/documents/CV_PHAP.pdf`,
     hrefWhatsapp: `https://wa.me/5511983994412`, 
 }
  
