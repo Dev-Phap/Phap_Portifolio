@@ -40,7 +40,22 @@
     }
   }
 
+/* Note que usamos as duas classes juntas no mesmo elemento */
+.slider-track.list_not_animation {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important; /* Ocupa a largura total para centralizar */
+    animation: none !important; /* Mata a animação */
+    transform: none !important; /* Garante que não pare no meio do caminho */
+}
 
+/* Garante que a lista interna também se comporte bem */
+.slider-track.list_not_animation  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    width: 100%;
+}
 
 .images-list {
     display: flex;         
@@ -69,5 +84,9 @@
 }
 
 
-
- 
+/* regra para afetar somente a seção de habilidade */
+.content.active.skills-wrapper {
+    flex-direction: column; 
+    align-items: stretch;   
+    gap: 25px;              
+}
