@@ -33,6 +33,7 @@ Na [Versão 1.0](https://dev-phap.github.io/Phap_Portifolio/) - busquei desenvol
 <ul>
   <li>Layout Responsivo para diferentes tamanhos de telas.</li>
   <li>Efeito Animação de Fade-in com leve translocação no eixo Y ao rolar a página.</li>
+  <li>Botão Flutuante do WhatsApp</li>
 </ul>
 <p><em>Funcionalidades globais</em></p>
 
